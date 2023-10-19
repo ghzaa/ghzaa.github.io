@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- connect to css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            background-color: aliceblue;
+            color: darkgrey;
+            transition: .5s;
+        }
+        input[type="checkbox"]{
+            position: relative;
+            width: 40px;
+            height: 20px;
+            appearance: none;
+            background-color: dimgrey;
+            outline: none;
+            border-radius: 10px;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked{
+            background-color:dodgerblue;
+        }
+        input[type="checkbox"]::before{
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color:lightgray;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: .5s ease;
+        }
+        input[type="checkbox"]:checked::before{
+            transform: translateX(20px);
+        }
+        .dark{
+            background-color: #272829;
+            color:beige;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+             <img src="asset/squidword.jpeg" alt="my-profile">
+        </div>
+        <div class="title-container">
+             <h1>@raistawhed</h1>
+             <p>hello guys!My name is Rais tawheed mumtaz ghaizan.I am 15 years old.I love you</p>
+             <p>Nice to see you~</p>
+            
+             <a href="https://www.instagram.com/raistawhed/" class="link-item" target="_blank">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 7.5l0 .01"></path>
+                 </svg></div>
+                 <p>follow my instagram</p>
+                 <div class="hidden"></div>
+             </a>
+             <a href="https://www.youtube.com/@EwingHDTV" class="link-item" target="_blank">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
+                    <path d="M10 9l5 3l-5 3z"></path>
+                 </svg></div>
+                 <p>my favorite youtube channel</p>
+                 <div class="hidden"></div>
+             </a>
+             <a href="https://tv.idlixplus.net/" class="link-item" target="_blank">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-netflix" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M9 3l10 18h-4l-10 -18z"></path>
+                    <path d="M5 3v18h4v-10.5"></path>
+                    <path d="M19 21v-18h-4v10.5"></path>
+                 </svg></div>
+                 <p>netflix kw</p>
+                 <div class="hidden"></div>
+             </a>
+
+            
+    
+    <h4>DARK/LIGHT</h4>
+    <input type="checkbox" onclick="ubahmode()">
+    <script>
+        function ubahmode(){
+            const ubah = document.body;
+            ubah.classList.toggle("dark");
+        }
+    
+</script>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Sedgwick+Ave+Display&display=swap');
+
+
+body{
+    /* define font family */
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Autour One', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    background-color: gray;
+
+    /* define the layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100hv;
+    overflow-x: hidden;
+}
+
+.container{
+     /* menentukan lebar container */
+     width: 91%;
+     max-width: 600px;
+     margin: 10px;
+     padding: 50px 0px 100px 0px;
+
+     /* define the layout */
+     /* elemen yang ada di container jadi center */
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+    /* set the image profile */
+    .img-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+   /* set the title container */
+   .title-container{
+    /* set the layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    /* set the text color */
+    color:mediumpurple;
+   }
+   /* set the link item elements */
+   .link-item{
+    /* menentukan bentuk dari link itemnya */
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* text color and background color */
+    background-color:#5C5470;
+    color:mediumpurple;
+
+    display: flex;
+    justify-content: space-between;
+
+   }
+   /* set the icon */
+   .icon{
+  margin: 3px 8px;
+  width: 44px;
+  height: 44px;
+  }
+  .link-item:hover{
+    transform: scale(1.02);
+    transition: cubic-bezier(.07,1.41,.82,1.41)0.2s;
+    background-color:darkgray;
+  }
+   
